@@ -2,15 +2,13 @@ There are various obvious thing which I can't remember
 ------------------------------------------------------
 
 * mysql import with progress bar
-
   pv dump.sql | mysql -u root -p
 
 * calendar with specified month
-
   cal -m 6; cal -m June
 
-find ID of all SELECT SQL queries
-mysql -e "show full processlist\G;" | grep -B 7 'SELECT' | grep Id
+* find ID of all SELECT SQL queries
+  mysql -e "show full processlist\G;" | grep -B 7 'SELECT' | grep Id
 
 resize logival volume
 lvresize -L 10000M /dev/vg0/some-disk; resize2fs /dev/vg0/some-disk; e2fsck -y /dev/vg0/some-disk
