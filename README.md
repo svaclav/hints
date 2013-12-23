@@ -13,35 +13,46 @@ There are various obvious thing which I can't remember
 
   mysql -e "show full processlist\G;" | grep -B 7 'SELECT' | grep Id
 
-resize logival volume
-lvresize -L 10000M /dev/vg0/some-disk; resize2fs /dev/vg0/some-disk; e2fsck -y /dev/vg0/some-disk
+* resize logival volume
 
-extract xz files
-tar Jvx file
+  lvresize -L 10000M /dev/vg0/some-disk; resize2fs /dev/vg0/some-disk; e2fsck -y /dev/vg0/some-disk
 
-disable bash autocompletion for a specific command only
-complete -W "" rm (insert into /root/.bashrc)
+* extract xz files
 
-grep process fast
-pgrep -fl some_process
+  tar Jvx file
 
-subtract a small file from a bigger file
-grep -vf filesmall filebig
+* disable bash autocompletion for a specific command only
 
-dmesg with time
-dmesg -T
+  complete -W "" rm (insert into /root/.bashrc)
 
-run "some_command" (or any pipeline) and send the output into vim
-some_command | vim -
+* grep process fast
 
-swap usage per process
-for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+  pgrep -fl some_process
 
-print N line in file
-sed -n 'Np' file
+* subtract a small file from a bigger file
+  
+  grep -vf filesmall filebig
 
-ssh for loop sequence
-for I in $(seq 1 10); do echo -e machine${I}.somewhere.com; ssh user@machine${I}.somewhere.com "ls /var/tmp/file"; done
+* dmesg with time
 
-bash sequence
-for I in $(seq 1 10); do echo $I; done
+  dmesg -T
+
+* run "some_command" (or any pipeline) and send the output into vim
+
+  some_command | vim -
+
+* swap usage per process
+
+  for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+
+* print N line in file
+
+  sed -n 'Np' file
+
+* ssh for loop sequence
+
+  for I in $(seq 1 10); do echo -e machine${I}.somewhere.com; ssh user@machine${I}.somewhere.com "ls /var/tmp/file"; done
+
+* bash sequence
+
+  for I in $(seq 1 10); do echo $I; done
