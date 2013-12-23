@@ -3,11 +3,11 @@ There are various obvious thing which I can't remember
 
 * mysql import with progress bar
 
-pv dump.sql | mysql -u root -p
+  pv dump.sql | mysql -u root -p
 
 * calendar with specified month
 
-cal -m 6; cal -m June
+  cal -m 6; cal -m June
 
 find ID of all SELECT SQL queries
 mysql -e "show full processlist\G;" | grep -B 7 'SELECT' | grep Id
