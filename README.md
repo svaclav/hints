@@ -1,5 +1,5 @@
-There are various obvious thing which I can't remember
-------------------------------------------------------
+There are various obvious things which I can't remember
+-------------------------------------------------------
 
 * list of empty subdirectories of current directory
 
