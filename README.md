@@ -1,6 +1,10 @@
 There are various obvious thing which I can't remember
 ------------------------------------------------------
 
+* list of empty subdirectories of current directory
+
+  find . -empty -type d
+
 * mysql import with progress bar
 
   pv dump.sql | mysql -u root -p
