@@ -1,6 +1,9 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* bash function cs
 
+  function cs () { cd $1; ls -F; }
+  
 * list of empty subdirectories of current directory
 
   find . -empty -type d
