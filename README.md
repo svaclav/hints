@@ -26,7 +26,7 @@ There are various obvious things which I can't remember
 
 * extract xz files
 
-  tar Jvx file
+  tar Jfvx file
 
 * disable bash autocompletion for a specific command only
 
