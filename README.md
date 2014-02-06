@@ -1,5 +1,11 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* output of grep into vim
+
+  vim $(grep -l PATTERN *)
+  vim -o $(grep -l PATTERN *) - open more than one file
+  vim -p $(grep -l PATTERN *) - open more than one file but in tabs 
+
 * bash function cs
 
   function cs () { cd $1; ls -alF; }
