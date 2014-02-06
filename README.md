@@ -1,5 +1,9 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* scp with port
+  
+  scp -P $PORT $FILE $REMOTE_MACHINE:/$DIRECTORY
+
 * random password from CLI
 
   * apg
