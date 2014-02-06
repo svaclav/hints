@@ -1,5 +1,9 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* creates linux kernel .config with random choices
+ 
+  make randconfig
+
 * print floating numbers with zero at the beginnig
  
   printf "%1.4f\n" $(echo 2/3 | bc -l)
