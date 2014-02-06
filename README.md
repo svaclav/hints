@@ -4,7 +4,7 @@ There are various obvious things which I can't remember
 
   vim $(grep -l PATTERN *)
   vim -o $(grep -l PATTERN *) - open more than one file
-  vim -p $(grep -l PATTERN *) - open more than one file but in tabs 
+  vim -p $(grep -l PATTERN *) - open more than one file but in tabs
 
 * bash function cs
 
