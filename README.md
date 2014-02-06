@@ -1,5 +1,9 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* print floating numbers with zero at the beginnig
+ 
+  printf "%1.4f\n" $(echo 2/3 | bc -l)
+
 * scp with port
   
   scp -P $PORT $FILE $REMOTE_MACHINE:/$DIRECTORY
