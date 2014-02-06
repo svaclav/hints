@@ -1,5 +1,11 @@
 There are various obvious things which I can't remember
 -------------------------------------------------------
+* random password from CLI
+
+  * apg
+  * date | md5sum | cut -c 1-12
+  * cat /dev/urandom | base64 | tr -d '[^:alnum:]' | cut -c1-10 | head -1
+  
 * output of grep into vim
 
   * vim $(grep -l PATTERN *)
