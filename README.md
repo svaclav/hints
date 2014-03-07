@@ -1,5 +1,5 @@
-There are various obvious things which I can't remember
--------------------------------------------------------
+*There are various obvious things which I can't remember*
+
 * creates linux kernel .config with random choices
  
   make randconfig
