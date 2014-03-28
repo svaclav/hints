@@ -1,6 +1,6 @@
 #### There are various obvious things which I can't remember:
 
-* quick way to list just directories in Unix
+* quick way to list just directories
 
   ls -al | grep "^d"
   
