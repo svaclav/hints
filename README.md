@@ -1,5 +1,9 @@
 #### There are various obvious things which I can't remember:
 
+* quick way to list just directories in Unix
+
+  ls -al | grep "^d"
+  
 * creates linux kernel .config with random choices
  
   make randconfig
