@@ -4,37 +4,37 @@
 
   `cd /tmp && git clone https://github.com/wencaaa/confs.git && cd confs/ && source .bashrc`
   
-* see *git summary* again after git pull
+* see **git summary** again after git pull
 
   `git diff --stat master@{1} master`
   
-* *grant access* in MySQL
+* **grant access** in MySQL
  
   `GRANT ALL ON demo.* TO user1@localhost IDENTIFIED BY 'mypassword'; flush privileges;`
 
-* ubuntu upgrade
+* ubuntu **upgrade**
  
-  apt-get install update-manager-core; do-release-upgrade -d
+  `apt-get install update-manager-core; do-release-upgrade -d`
 
-* kill TCP connection
+* **kill** TCP connection
  
-  lsof -i tcp:22 | grep LISTEN | awk '{print $2}' | xargs kill
+  `lsof -i tcp:22 | grep LISTEN | awk '{print $2}' | xargs kill`
 
-* check which process runs every second
+* check **which process** runs every second
 
-  apt-get install sysstat; pidstat 1
+  `apt-get install sysstat; pidstat 1`
   
-* search in git where a change were done
+* **search in git** where a change were done
  
-  git log -S pattern
+  `git log -S pattern`
 
-* print data from line 2 to 5
+* **print data** from line 2 to 5
  
-  sed -n '2,5p' text
+  ``sed -n '2,5p' text``
 
-* top sorted by swap usage
+* top sorted by **swap usage**
  
-  top then press O followed by p then enter
+  `top then press O followed by p then enter`
 
 * ssh local port forward
  
