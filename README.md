@@ -1,6 +1,7 @@
 #### There are various obvious things which I can't remember:
 
 * get my bash aliases quickly
+
   `cd /tmp && git clone https://github.com/wencaaa/confs.git && cd confs/ && source .bashrc`
   
 * see git summary again after git pull
