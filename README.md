@@ -24,7 +24,7 @@
 
   `apt-get install sysstat; pidstat 1`
   
-* **search in git** where a change were done
+* **search in git** where a change was done
  
   `git log -S pattern`
 
