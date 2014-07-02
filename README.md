@@ -1,16 +1,16 @@
 #### There are various obvious things which I can't remember:
 
-* get my bash aliases quickly
+* get my *bash aliases* quickly
 
   `cd /tmp && git clone https://github.com/wencaaa/confs.git && cd confs/ && source .bashrc`
   
-* see git summary again after git pull
+* see *git summary* again after git pull
 
-  git diff --stat master@{1} master
+  `git diff --stat master@{1} master`
   
-* grant access in MySQL
+* *grant access* in MySQL
  
-  GRANT ALL ON demo.* TO user1@localhost IDENTIFIED BY 'mypassword'; flush privileges;
+  `GRANT ALL ON demo.* TO user1@localhost IDENTIFIED BY 'mypassword'; flush privileges;`
 
 * ubuntu upgrade
  
