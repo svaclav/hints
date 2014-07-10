@@ -1,5 +1,9 @@
 #### There are various obvious things which I can't remember:
 
+* read web articles in **vim**
+ 
+  `elinks -dump http://some-url/ | vim - -R -u NONE`
+
 * get my **bash aliases** quickly
 
   `cd /tmp && git clone https://github.com/wencaaa/confs.git && cd confs/ && source .bashrc`
