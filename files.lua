@@ -4,6 +4,10 @@
 -- print files older than timestamp
 --
 
+--
+-- example: lua files.lua 1425502690
+--
+
 local timetst = tonumber(arg[1])
 
 local fd = assert(io.popen("stat --format '%Z=%n' *"))
