@@ -17,4 +17,4 @@ local tabule = {}
 
 for k, v in files:gmatch("(%S+)=(%S+)") do tabule[v]=tonumber(k) end
 
-for k, v in pairs(tabule) do if v > timetst then print (k) end end
+for k, v in pairs(tabule) do if v <= timetst then print (k) end end
