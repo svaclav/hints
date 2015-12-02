@@ -1,0 +1,2 @@
+alias ntlp='netstat -an | egrep 'Proto|LISTEN'
+alias ntlpp='sockstat -4l'
