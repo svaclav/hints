@@ -1,3 +1,6 @@
+simple notational velocity only in bash with fzy and vim (https://github.com/jhawthorn/fzy)
+tmpfile=$(ls ~/notes/* | fzy) && cat $tmpfile | vim -
+
 list of empty subdirectories of current directory
 find . -empty -type d
 
