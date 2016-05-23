@@ -1,3 +1,29 @@
+add a existing user to existing group
+usermod -a -G group user
+
+sum column
+awk '{ sum +=$2 } END { print sum; }'
+
+rm - argument list too long error
+for f in *.pdf; do echo "$f"; rm "$f"; done
+
+find files newer than 
+touch -d '1 Jan 2015 10:22' datefile
+find . -newer datefile
+find . -not -newer datefile
+
+bash mapfile array
+mapfile -t array < <(ls -1); echo ${array[@]}; echo ${array[3]}
+
+sesync two local directories
+rsync -avz src/ target
+
+check file - time of last change, seconds since Epoch
+stat --format %Z file
+
+find command inside other find command
+find $(find . -name directory -type d) -type f
+
 simple notational velocity only in bash with fzy and vim (https://github.com/jhawthorn/fzy)
 tmpfile=$(ls ~/notes/* | fzy) && cat $tmpfile | vim -
 
