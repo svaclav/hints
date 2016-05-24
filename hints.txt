@@ -18,8 +18,8 @@ mapfile -t array < <(ls -1); echo ${array[@]}; echo ${array[3]}
 sesync two local directories
 rsync -avz src/ target
 
-check file - time of last change, seconds since Epoch
-stat --format %Z file
+check file - time of last change
+stat -t --format %z file
 
 find command inside other find command
 find $(find . -name directory -type d) -type f
