@@ -1,0 +1,90 @@
+datetime in future
+date -d '18 hours'
+date --date="18 hours"
+
+ctrl-s in bash
+stty -ixon
+
+cron syntax
+min/hour/day of month/month/day of week (0-6 -> sunday to saturday)
+
+tmux synchronize-panes
+Ctrl+b :set synchronize-panes
+
+mysql grant access to user
+GRANT ALL PRIVILEGES ON carussel_cup.* To 'carussel_1bdtest'@'172.27.67.%' IDENTIFIED BY 'nUZU49MDm.Z55vEM';
+
+add a existing user to existing group
+usermod -a -G group user
+
+sum column
+awk '{ sum +=$2 } END { print sum; }'
+
+rm - argument list too long error
+for f in *.pdf; do echo "$f"; rm "$f"; done
+
+find files newer than 
+touch -d '1 Jan 2015 10:22' datefile
+find . -newer datefile
+find . -not -newer datefile
+
+bash mapfile array
+mapfile -t array < <(ls -1); echo ${array[@]}; echo ${array[3]}
+
+sesync two local directories
+rsync -avz src/ target
+
+check file - time of last change
+stat -t --format %z file
+
+find command inside other find command
+find $(find . -name directory -type d) -type f
+
+simple notational velocity only in bash with fzy and vim (https://github.com/jhawthorn/fzy)
+tmpfile=$(ls ~/notes/* | fzy) && cat $tmpfile | vim -
+
+list of empty subdirectories of current directory
+find . -empty -type d
+
+mysql import with progress bar
+pv dump.sql | mysql -u root -p
+
+calendar with specified month
+cal -m 6; cal -m June
+
+find ID of all SELECT SQL queries
+mysql -e "show full processlist\G;" | grep -B 7 'SELECT' | grep Id
+
+resize logival volume
+lvresize -L 10000M /dev/vg0/some-disk; resize2fs /dev/vg0/some-disk; e2fsck -y /dev/vg0/some-disk
+
+extract xz files
+tar Jvx file
+
+disable bash autocompletion for a specific command only
+complete -W "" rm (insert into /root/.bashrc)
+
+grep process fast
+pgrep -fl some_process
+
+subtract a small file from a bigger file
+grep -vf filesmall filebig
+
+dmesg with time
+dmesg -T
+
+run "some_command" (or any pipeline) and send the output into vim
+some_command | vim -
+
+swap usage per process
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+
+print N line in file
+sed -n 'Np' file
+
+ssh for loop sequence
+for I in $(seq 1 10); do echo -e machine${I}.somewhere.com; ssh user@machine${I}.somewhere.com "ls /var/tmp/file"; done
+
+bash sequence
+for I in $(seq 1 10); do echo $I; done
+
