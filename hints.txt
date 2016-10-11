@@ -1,3 +1,6 @@
+sort processes according to start time
+ps kstart_time -ef
+
 datetime in future
 date -d '18 hours'
 date --date="18 hours"
