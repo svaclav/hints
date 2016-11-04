@@ -1,3 +1,6 @@
+list top 20 files modified within the last 24 hours
+find / -mtime -1 -ls | head -n 20 - 
+
 sort processes according to start time
 ps kstart_time -ef
 
