@@ -65,7 +65,7 @@ resize logival volume
 lvresize -L 10000M /dev/vg0/some-disk; resize2fs /dev/vg0/some-disk; e2fsck -y /dev/vg0/some-disk
 
 extract xz files
-tar Jvx file
+tar Jvxf file
 
 disable bash autocompletion for a specific command only
 complete -W "" rm (insert into /root/.bashrc)
