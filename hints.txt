@@ -1,3 +1,29 @@
+bash diff
+diff  <(netstat  -s) <(sleep 5;netstat -s)
+
+remove all except one directory
+shopt -s extglob
+echo rm -rf !(A)
+
+mv A /tmp/
+rm * -rf
+mv /tmp/A .
+
+puppetdb
+curl -G 'http://localhost:8080/v3/resources' --data-urlencode 'query=["and", ["=", "type", "Nginx_base::Resource::Vhost::Default"]]' | grep certname
+
+find saved WiFi password
+sudo grep key /etc/NetworkManager/system-connections/$wifi_network
+
+ban IP
+iptables -I INPUT -s $1 -j DROP -m comment --comment ip_ban
+
+openstack nova list
+nova list --all-tenants --host compute9 --fields id,instance_name | grep "instance-" | cut -d ' ' -f 2
+
+SSL expiration date
+openssl x509 -enddate -noout -in file.pem
+
 list top 20 files modified within the last 24 hours
 find / -mtime -1 -ls | head -n 20 - 
 
