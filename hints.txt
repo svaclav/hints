@@ -1,3 +1,12 @@
+netcat
+nc -z -v -w5 <host> <port>
+
+gcal holidays
+gcal -qcz --holiday-list
+
+find your external IP
+curl ipinfo.io/ip
+
 bash diff
 diff  <(netstat  -s) <(sleep 5;netstat -s)
 
@@ -63,7 +72,7 @@ find . -not -newer datefile
 bash mapfile array
 mapfile -t array < <(ls -1); echo ${array[@]}; echo ${array[3]}
 
-sesync two local directories
+resync two local directories
 rsync -avz src/ target
 
 check file - time of last change
@@ -110,6 +119,9 @@ some_command | vim -
 
 swap usage per process
 for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+
+remove N line from file
+sed -i 'Nd' file
 
 print N line in file
 sed -n 'Np' file
