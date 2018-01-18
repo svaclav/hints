@@ -1,3 +1,11 @@
-apt-get -y install ncdu mg mtr vim
-
-yum -y install ncdu mg mtr vim
+* ncdu, mg, mtr, vim
+* dnsutils, ipcalc, whois, mtr-tiny, nmap
+* git, tig
+* lftp
+* keepassx, pwgen
+* screenfetch
+* https://github.com/davecheney/httpstat
+* https://github.com/BurntSushi/ripgrep
+* https://github.com/sharkdp/fd
+* https://github.com/asciimoo/wuzz
+* https://github.com/tldr-pages/tldr
