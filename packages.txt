@@ -8,4 +8,4 @@
 * https://github.com/BurntSushi/ripgrep
 * https://github.com/sharkdp/fd
 * https://github.com/asciimoo/wuzz
-* https://github.com/tldr-pages/tldr
+* https://github.com/dbrgn/tealdeer

@@ -1,3 +1,6 @@
+now timestamp
+date +%s
+
 netcat
 nc -z -v -w5 <host> <port>
 
