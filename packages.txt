@@ -9,3 +9,4 @@
 * https://github.com/sharkdp/fd
 * https://github.com/asciimoo/wuzz
 * https://github.com/dbrgn/tealdeer
+* https://github.com/bootandy/dust
