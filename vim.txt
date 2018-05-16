@@ -1,0 +1,2 @@
+delete lines with pattern
+:g/pattern/d
