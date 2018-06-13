@@ -1,3 +1,7 @@
+grep chaining alternative
+ps axuf | grep bin | grep xfce | grep -v terminal
+ps axuf | awk '/bin/ && /xfce/ && !/terminal/'  
+
 vim scripting
 vim -s commands.vim test.file
 cat commands.vim 
