@@ -72,7 +72,7 @@ tmux synchronize-panes
 Ctrl+b :set synchronize-panes
 
 mysql grant access to user
-GRANT ALL PRIVILEGES ON carussel_cup.* To 'carussel_1bdtest'@'172.27.67.%' IDENTIFIED BY 'nUZU49MDm.Z55vEM';
+GRANT ALL PRIVILEGES ON db.table To 'user'@'ip' IDENTIFIED BY 'password';
 
 add a existing user to existing group
 usermod -a -G group user
